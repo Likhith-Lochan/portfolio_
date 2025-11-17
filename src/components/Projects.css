@@ -45,7 +45,7 @@ h2 {
 .card-image {
   height: 200px;
   background-color: #444;
-  background-image: url(''); /* Replace with your image path */
+  /*background-image: url(''); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   border-radius: 12px 12px 0 0;
