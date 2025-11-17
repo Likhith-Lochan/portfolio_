@@ -1,0 +1,55 @@
+
+
+body, #root {
+  margin: 0;
+  min-height: 100vh;
+  background: rgba(20, 20, 20, 0.85); /* dark translucent */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-image:
+    linear-gradient(135deg, rgba(255,255,255,0.05) 25%, transparent 25%),
+    linear-gradient(225deg, rgba(255,255,255,0.05) 25%, transparent 25%);
+  background-size: 50px 50px;
+  background-repeat: repeat;
+  background-position: 0 0, 25px 25px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Make sure your main app container takes full height */
+#root > div {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+
+section {
+  width: 90%;
+  max-width: 800px;
+  margin: 1rem auto;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 2rem;
+  color: white;
+}
+
+
+@keyframes shiny {
+  0% {
+    background-position: 0 0, 25px 25px;
+  }
+  100% {
+    background-position: 50px 50px, 75px 75px;
+  }
+}
+
+body, #root {
+  animation: shiny 15s linear infinite;
+}

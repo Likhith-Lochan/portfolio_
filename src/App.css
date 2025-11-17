@@ -1,0 +1,73 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(145deg, #1a1a1a, #111); /* dark gradient */
+  color: #fff;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Optional: make text smooth and more visible */
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+section {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.05); /* glass-like transparency */
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px); /* glass blur effect */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Optional: Links styling for contrast */
+a {
+  color: #00bfff; /* Light blue for contrast */
+}
+
+
+.button-glass {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button-glass:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 191, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 191, 255, 0.2);
+  }
+}
+
+.contact-list a:hover {
+  animation: glow 1.5s infinite ease-in-out;
+}

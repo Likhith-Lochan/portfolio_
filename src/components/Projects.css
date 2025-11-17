@@ -1,0 +1,109 @@
+Projects.css
+
+/* General Styles */
+/* Projects.css */
+
+.projects {
+  padding: 40px;
+  background-color: #181818; /* Dark background */
+  color: #fff; /* White text */
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: #2b2b2b; /* Dark background for each card */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+  height: 200px;
+  background-color: #444;
+  background-image: url(''); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.card-content a {
+  align-self: flex-start;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-content a:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.card-content a:focus,
+.card-content a:active {
+  outline: 2px solid #fff;
+}
+
+.card-image {
+  height: 200px;
+  background-color: #444;
+  background-image: url(''); /* Add your image path */
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px 12px 0 0;
+}
+
+
+
+
