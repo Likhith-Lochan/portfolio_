@@ -86,28 +86,7 @@ function Projects() {
       <div className="project-cards">
 
 
-        <div className="project-card">
-          <div className="card-image" style={{ backgroundImage: "url('/kafka.png')" }}>
-            {/* You can add a background image for the card here */}
-          </div>
-          <div className="card-content">
-            <h3>Kafka-Based Microservices</h3>
-            <p><strong>Tech Stack:</strong> Spring Boot, Spring Kafka, Docker, Maven</p>
-            <p>
-              Developed and deployed two Spring Boot microservices (Producer and Consumer) demonstrating event-driven 
-              architecture using Apache Kafka.
-              <br />
-              Integrated Kafka with Spring Boot using <strong>Spring Kafka</strong> to publish and consume messages in real time, 
-              showcasing understanding of topics, partitions, and message flow.
-              <br />
-              Containerized both services with Docker and orchestrated them along with Kafka and Zookeeper using <strong>Docker Compose</strong> 
-              for streamlined multi-container deployment.
-              <br />
-              Structured the project with modular directories for scalable, maintainable code.
-            </p>
-            <a href="https://github.com/Likhith-Lochan/kafka-topic-streaming-services" target="_blank" rel="noopener noreferrer">GitHub Link</a>
-          </div>
-        </div>
+  
 
         <div className="project-card">
   <div
@@ -213,6 +192,28 @@ function Projects() {
 </div>
 
 
+      <div className="project-card">
+          <div className="card-image" style={{ backgroundImage: "url('/kafka.png')" }}>
+            {/* You can add a background image for the card here */}
+          </div>
+          <div className="card-content">
+            <h3>Kafka-Based Microservices</h3>
+            <p><strong>Tech Stack:</strong> Spring Boot, Spring Kafka, Docker, Maven</p>
+            <p>
+              Developed and deployed two Spring Boot microservices (Producer and Consumer) demonstrating event-driven 
+              architecture using Apache Kafka.
+              <br />
+              Integrated Kafka with Spring Boot using <strong>Spring Kafka</strong> to publish and consume messages in real time, 
+              showcasing understanding of topics, partitions, and message flow.
+              <br />
+              Containerized both services with Docker and orchestrated them along with Kafka and Zookeeper using <strong>Docker Compose</strong> 
+              for streamlined multi-container deployment.
+              <br />
+              Structured the project with modular directories for scalable, maintainable code.
+            </p>
+            <a href="https://github.com/Likhith-Lochan/kafka-topic-streaming-services" target="_blank" rel="noopener noreferrer">GitHub Link</a>
+          </div>
+        </div>
 
 
       </div>
