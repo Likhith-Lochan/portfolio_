@@ -105,6 +105,51 @@ function Projects() {
           </div>
         </div>
 
+        <div className="project-card">
+  <div
+    className="card-image"
+    style={{ backgroundImage: "url('/bigram.jpg')" }}
+  >
+    {/* Add a background image for the card here */}
+  </div>
+
+  <div className="card-content">
+    <h3>Bigram Transformer-based Language Model</h3>
+    <p><strong>Tech Stack:</strong> PyTorch, Transformers, Gradio, Hugging Face</p>
+
+    <p>
+      Developed a Bigram Transformer-based language model from scratch using 
+      <strong> PyTorch</strong>, implementing multi-head self-attention, feed-forward layers, 
+      and positional embeddings.
+      <br />
+      Built custom tokenizer and encoding/decoding pipelines to support efficient 
+      text generation with a block-wise attention mechanism.
+      <br />
+      Implemented an interactive text-generation interface using 
+      <strong> Gradio</strong>, allowing prompt-based generation with adjustable token limits.
+      <br />
+      Gained hands-on experience with transformer architecture, sequence modeling, 
+      and modern NLP workflows through training and deploying the model.
+    </p>
+
+    <a
+      href="https://huggingface.co/spaces/LikhithLR/BigramLanguageModel"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Model Link
+    </a>
+    <br />
+    <a
+      href="https://github.com/Likhith-Lochan/bigram-language-model"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      GitHub Link
+    </a>
+  </div>
+</div>
+
 
         <div className="project-card">
           <div className="card-image" style={{ backgroundImage: "url('/blog.avif')" }}>
