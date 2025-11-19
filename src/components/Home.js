@@ -7,7 +7,7 @@ function Home() {
     <section id="home" className="home">
       <h1>Welcome to My Portfolio</h1>
       <p>Scroll down to learn more about me and my work!</p>
-      <a href="/resume_rll.pdf" download className="resume-button">Download My Resume</a>
+      <a href="/resume_m.pdf" download className="resume-button">Download My Resume</a>
     </section>
   );
 }
